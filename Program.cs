@@ -24,8 +24,8 @@ namespace iterating_planets
                 List<string> matchingProbes = new List<string>();
                 foreach(Dictionary<string, string> probe in probes){
                    if(probe.ContainsKey(planet)){
-                       foreach(KeyValuePair<string, string> thing in probe){
-                           matchingProbes.Add(thing.Value);
+                       foreach(KeyValuePair<string, string> kvp in probe){
+                           matchingProbes.Add(kvp.Value);
                        }
                    }
                 }      
